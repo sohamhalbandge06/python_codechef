@@ -1,0 +1,23 @@
+Taking user input
+---
+
+input() -> assumes that input is a string
+
+E.g.
+name = input()
+
+Converting input datatype
+---
+
+num1 = int(input()) # it will take the input in a integer format
+
+Multiple string inputs
+----
+
+a, b, c = input().split()
+
+Multiple integer inputs
+----
+
+a, b, c = map(int, input().split())
+
