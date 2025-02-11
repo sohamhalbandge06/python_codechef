@@ -1,0 +1,75 @@
+Strings
+---
+
+1. Concatenation
+
+'Hello' + 'World' -> 'HelloWorld'
+
+2. Repetition
+
+'hello' * 3 -> 'hellohellohello'
+
+3. Length
+
+string = 'hello'
+len(string) # 5
+
+4. Lower and Upper case
+
+string = 'Codechef'
+print(string.upper()) # 'CODECHEF'
+print(string.lower()) # 'codechef'
+
+5. Changing Characters
+
+myString = 'Chaf'
+myString_new = myString.replace('a', 'e')
+print(myString_new) # Chef
+
+Indexing
+----
+
+		  0   1   2   3   4   5  --> forward indexing
+string = 'P   y   t   h   o   n'
+		 -6	 -5  -4  -3  -2  -1  --> negative indexing
+
+
+Positive Indexing -> Python index starts from 0.
+Negative Indexing -> Starts from end of the string. The last character is at index '-1'
+
+to access index elements
+
+string[0] -> 'P'
+string[-1] -> 'n'
+
+Slicing
+---
+
+Slicing is way to extract part from a string.
+
+Syntax1: string[start:end]
+
+When you specify a start index in a string slice, Python includes the character at that index as the starting point of your new substring.
+
+The end index is exclusive. This means the character at the end index is not included in the resulting substring. The slice stops just before it.
+
+To get the first 4 characters of a string:
+
+str = 'Interesting'
+substring = str[0:4]
+print(substring) # Inte
+
+Syntax2: string[start:end:step]
+
+Step is how many characters you move forward each time you read. If your step is 1, you read one character at a time. If your step is 2, you skip one character and then read the next one.
+
+Let's say our string is 'abcde':
+
+s = 'abcde'
+print(s[0:4:2]) # Output: ac
+
+Reverse Slicing:
+
+s='abcde'
+print(s[4:0:-1]) # Output: edcb
+print(s[::-1]) # Output : edcba
